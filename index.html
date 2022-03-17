@@ -1,0 +1,87 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Front-end Test</title>
+  </head>
+  <body onload="loadData()">
+    <!-- table section -->
+
+    <section class="tableSection">
+      <div class="table">
+        <table id="table">
+          <tr>
+            <th>Id</th>
+            <th>Date de crétion</th>
+            <th>Etat</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Nom d'utilisateur</th>
+            <th>Matricule</th>
+            <th class="action">Action</th>
+          </tr>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+
+      <div class="button" onclick="show()">
+        <button>Ajouter utilisateur</button>
+      </div>
+    </section>
+
+    <!-- Modal -->
+
+    <section class="FromModal">
+      <div id="form" class="invisible">
+        <div>
+          <h1>Ajout d'utilisateurs</h1>
+        </div>
+        <div class="sousForm1">
+          <div>
+            <span>Nom</span>
+            <div><input type="text" name="nom" id="nom" /></div>
+          </div>
+          <div>
+            <span>Prenom</span>
+            <div><input type="text" name="Prenom" id="Prenom" /></div>
+          </div>
+          <div>
+            <span>Etat</span>
+            <div><input type="text" name="Etat" id="Etat" /></div>
+          </div>
+        </div>
+
+        <div class="sousForm2">
+          <div>
+            <span>Nom d'utilisatuer</span>
+            <div>
+              <input type="text" name="nomUtilisateur" id="nomUtilisateur" />
+            </div>
+          </div>
+          <div>
+            <span>Date de creation</span>
+            <div><input type="date" name="date" id="date" /></div>
+          </div>
+        </div>
+        <div class="sousForm2">
+          <div>
+            <span>Matricule </span>
+            <div><input type="text" name="matricule" id="matricule" /></div>
+          </div>
+        </div>
+        <div class="sousFormButton">
+          <button onclick="save()">Enregistrer</button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="/script.js"></script>
+</html>
